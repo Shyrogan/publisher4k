@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "fr.shyrogan"
-version = "1.0.0"
+version = "1.0.1"
 description = "A fast and reliable publisher to subscriber library wrote for Kotlin"
 
 repositories {
