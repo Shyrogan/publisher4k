@@ -61,7 +61,7 @@ class Dispatcher<T: Any>(val subscriptionList: MutableList<Subscription<T>> = mu
          */
         private fun <T: Any> sortedListenerArray(subscriptions: List<Subscription<T>>): Array<Listener<T>> {
             return subscriptions
-                    .sortedBy { it.priority }
+                    .sortedByDescending { it.priority }
                     .map { it.listener }
                     .toTypedArray()
         }
